@@ -1,45 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
   <title>GitHub Copilot Presentation</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/black.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/black.css">
+  <style>
+    .slide-background-content {
+      background-image: url("assets/ghbg.png");
+      background-size: 100% 100%;
+    }
+  </style>
 </head>
+
 <body>
 
   <div class="reveal">
     <div class="slides">
-      <section>
-        <h1>Introduction to GitHub Copilot</h1>
-        <p>AI-powered coding assistant</p>
-        <p>Your Name - Date</p>
+      <section data-background-gradient="linear-gradient(to bottom, #283b95, #17b2c3)">
+        <h2>137 hours</h2>
+        <div class="fragment">
+          <img src="assets/beznau.jpeg" alt="No Image" width="450" height="300">
+          <p>That’s how long the reactor Beznau Nuclear Power Plant Unit 1 needs to run to produce the energy used to
+            train GPT-4</p>
+        </div>
       </section>
       <section>
         <h2>What is GitHub Copilot?</h2>
+        <!-- Copilot suggests code or text that is relevant based on what you've already written -->
+        <p>Copilot is an AI-powered code completion tool</p>
+        <img src="assets/completion.png" alt="No Image">
+      </section>
+      <section>
+        <h2>How Does Copilot Work?</h2>
         <ul>
-          <li>A tool that uses AI to assist developers in writing code faster</li>
-          <li>Developed by GitHub and OpenAI</li>
-          <li>Provides code suggestions based on context</li>
+          <li>Powered by OpenAI Codex</li>
+          <li>Trained on billions of lines of code from public sources</li>
+          <li>Uses your code context to generate suggestions</li>
         </ul>
       </section>
       <section>
-        <h2>How Does It Work?</h2>
+        <h2>What's Copilot good for?</h2>
         <ul>
-          <li>Powered by a large language model (OpenAI Codex)</li>
-          <li>Trained on open-source code</li>
-          <li>Autocompletes code as you type or suggests entire functions</li>
+          <li>Speeds up coding!</li>
+          <li>Helps you learn by giving real-time suggestions.</li>
+          <li>Reduces errors.</li>
+        </ul>
+        <p>Fun Fact: Copilot knows more languages than most humans!</p>
+        <img class="fragment" src="assets/lie.png" width="300" height="200" alt="No Image">
+      </section>
+      <section>
+        <h2>Copilot in Action – Demo</h2>
+        <p>Let’s write some Javascript!</p>
+        <p>First 10 prime numbers!</p>
+        <img src="assets/js.png" width="300" height="250" alt="No Image">
+      </section>
+      <section>
+        <h2>Will Copilot Do All My Homework?</h2>
+        <ul>
+          <li>It helps, but you still need to know how to code!</li>
+          <li>It’s a tool, not a replacement for learning.</li>
+          <li>You tell it what to do—it just gives you suggestions.</li>
+        </ul>
+        <img class="fragment" src="assets/mix.png" width="200" height="250" alt="No Image">
+      </section>
+      <section>
+        <h2>Ethics and AI in Coding</h2>
+        <ul>
+          <li>Copilot was trained on publicly available code.</li>
+          <li>It’s important to understand the legal and ethical use of AI.</li>
+          <li>Don’t rely on it for everything—think critically!</li>
         </ul>
       </section>
-      <!-- Continue adding sections for each slide -->
+      <section>
+        <h2>Abuse - I need this for programming</h2>
+        <ul>
+          <li>Have you ever asked Chat GPT a question it refused to answer?</li>
+          <img class="fragment" src="assets/goosefab.png" width="200" height="250" alt="No Image">
+          <a href="assets/geese.png"> Link to geese talk</a>
+        </ul>
+      </section>
+      <section>
+        <h2>Hands-On Exercise</h2>
+        <p>Open a VS Code and and use Copilot to complete the code below:</p>
+        <p>Can you figure out what Copilot might suggest? Try using it yourself!</p>
+        <img class="fragment" src="assets/monte.png" alt="No Image">
+      </section>
+      <section>
+        <h2>The Copilot Journey Begins</h2>
+        <p>Thank you!</p>
+        <p>Questions?</p>
+        <p>Try out GitHub Copilot and see where it takes your coding!</p>
+        <p>Final Question: Can you imagine a future where anyone can code, even without knowing a programming language?
+        </p>
+        <img src="assets/time.png" alt="No Image">
+      </section>
+
     </div>
   </div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
   <script>
     Reveal.initialize();
   </script>
 
 </body>
+
 </html>
