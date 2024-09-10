@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>First 10 Prime Numbers:</h2>
+
+<p id="primeNumbers"></p>
+
+<script>
+function isPrime(num) {
+    for(let i = 2, sqrt = Math.sqrt(num); i <= sqrt; i++)
+        if(num % i === 0) return false; 
+    return num > 1;
+}
+
+let count = 0;
+let num = 2;
+let primes = "";
+
+while(count < 10) {
+    if(isPrime(num)) {
+        primes += num + " ";
+        count++;
+    }
+    num++;
+}
+
+document.getElementById("primeNumbers").innerHTML = primes;
+</script>
+
+</body>
+</html>
